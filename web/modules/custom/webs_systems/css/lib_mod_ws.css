@@ -1,0 +1,66 @@
+
+@-webkit-keyframes scroll {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(calc(-250px * 7));
+transform: translateX(calc(-250px * 7));
+}
+}
+@keyframes scroll {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(calc(-250px * 7));
+transform: translateX(calc(-250px * 7));
+}
+}
+.slider_inf {
+background: pr;
+box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+height: 100px;
+margin: auto;
+overflow: hidden;
+position: relative;
+width: 960px;
+}
+.slider_inf::before, .slider_inf::after {
+background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 50%);
+content: "";
+height: 100px;
+position: absolute;
+width: 200px;
+z-index: 2;
+}
+.slider_inf::after {
+right: 0;
+top: 0;
+-webkit-transform: rotateZ(180deg);
+transform: rotateZ(180deg);
+}
+.slider_inf::before {
+left: 0;
+top: 0;
+}
+.slider_inf .slide-track_inf {
+-webkit-animation: scroll 40s linear infinite;
+animation: scroll 40s linear infinite;
+display: flex;
+/*width: calc(250px * 14);*/
+width: 1px;
+}
+.slider_inf.container-fluid:hover .slider_inf.container-fluid {
+	animation-play-state: paused;
+}
+
+.slider_inf .slide-track_inf:hover {
+	animation-play-state: paused;
+}
+.slider_inf .slide_inf {
+height: 100px;
+width: 250px;
+}

@@ -1,0 +1,7 @@
+block.settings.webs_systems_watsapp_contacto:
+  type: block_settings
+  label: 'Watsapp contacto block'
+  mapping:
+    texto:
+      type: string
+      label: Foo

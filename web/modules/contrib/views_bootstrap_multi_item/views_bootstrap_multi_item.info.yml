@@ -1,0 +1,14 @@
+name: Views Bootstrap5 Multiple Item Carousel
+type: module
+description: Display Views result as carousel with multiple items.
+package: Views
+core_version_requirement: ^10
+dependencies:
+  - drupal:views
+libraries:
+  - views_bootstrap_multi_item/components
+
+# Information added by Drupal.org packaging script on 2023-01-07
+version: '1.0.0-alpha1'
+project: 'views_bootstrap_multi_item'
+datestamp: 1673106827

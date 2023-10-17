@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+
+function webs_systems_theme($existing, $type, $theme, $path) {
+  
+  return [
+    'slide_multi_infin' => [
+      'variables' => [
+        // Define aquí las variables que tu plantilla utilizará.
+        // Por ejemplo:
+        'titulo' => NULL,
+        'url_imgs' => NULL,
+      ],
+      'template' => 'slide_multi_infin', // Nombre del archivo de la plantilla.
+    ],
+    'slide_autoplay' => [
+      'variables' => [
+        // Define aquí las variables que tu plantilla utilizará.
+        // Por ejemplo:
+        'titulo' => NULL,
+        'url_imgs' => NULL,
+      ],
+      'template' => 'slide_autoplay', // Nombre del archivo de la plantilla.
+    ],
+
+
+  ];
+
+
+
+}

@@ -1,0 +1,8 @@
+webs_systems.example:
+  path: '/webs-systems/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\webs_systems\Controller\WebsSystemsController::build'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,42 @@
+{# variables que se pueden utilizar
+	- url_imgs
+	- titulo
+#}
+
+<div class="slider_inf container-fluid">
+	<div class="slide-track_inf">
+		{# Si el array url_imgs es mayor o igual a 14 recorrer el array y mostrar cada imagen  #}
+		{% if url_imgs|length >= 14 %}
+			{% for url_img in url_imgs %}
+            	<div class="slide_inf">
+					<img src="/sites/default/files/{{url_img}}" height="100" width="250" alt="" />
+				</div>
+        	{% endfor %}
+        {# Si el array url_imgs  es menor 14 y mayor a 0 mostrar las imagenes que existen y las que no se van a repetir de las que si existen  #}
+        {% elseif url_imgs|length < 14 and url_imgs|length > 0 %}
+		   {% for i in 0..14 %}
+		   		{% if url_imgs[i] %}
+		   			<div class="slide_inf">
+						<img src="/sites/default/files/{{url_imgs[i]}}" height="100" width="250" alt="L{{i}}" />
+					</div>
+				{% else %}
+					{% set indiceAleatorio = random(0, url_imgs|length -1) %}
+					<div class="slide_inf">
+						<img src="/sites/default/files/{{url_imgs[indiceAleatorio]}}" height="100" width="250" alt="{{indiceAleatorio}}" />
+					</div>
+
+		   		{% endif %} 
+        	{% endfor %}
+		{% else %}
+		{# Si no hay contenido slide-multi se mostraran imagenes de prueba #}
+		{% for j in 0..2 %}
+			{% for i in range(1, 7) %}
+				<div class="slide_inf">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/{{i}}.png" height="100" width="250" alt="" />
+				</div>
+			{% endfor %}
+		{% endfor %}
+		{% endif %}	
+	</div>
+</div>
+

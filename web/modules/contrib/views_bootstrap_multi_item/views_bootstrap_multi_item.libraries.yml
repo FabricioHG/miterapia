@@ -1,0 +1,10 @@
+components:
+  version: 1.x
+  css:
+    theme:
+      css/views-bootstrap-multi-item.css: {}
+  js:
+    js/views-bootstrap-multi-item.js: {}
+  dependencies:
+    - core/drupal
+#    - core/jquery

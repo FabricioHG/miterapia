@@ -1,0 +1,13 @@
+# Main theme library.
+global:
+  version: 1.x
+  css:
+    theme:
+      css/estilos.css: {}
+  js:
+      js/plantilla-web.js: {}
+  dependencies: 
+    - core/jquery
+    - core/drupal
+    - core/once
+

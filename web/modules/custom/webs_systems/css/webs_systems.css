@@ -1,0 +1,114 @@
+#block-plantilla-web-whatsappcontacto {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  text-align: right;
+  padding-right: 10px;
+}
+.ico_whats {
+  width: 50px;
+  height: auto;
+}
+/*Paragrap img izq text derecha (tit, texto, enlace)*/
+.paragraph.paragraph--type--imagen-y-texto.paragraph--view-mode--default {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.paragraph.paragraph--type--imagen-der-y-texto-izq.paragraph--view-mode--default {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+.paragraph.paragraph--type--imagen-y-texto.paragraph--view-mode--default legend,
+.paragraph.paragraph--type--imagen-der-y-texto-izq.paragraph--view-mode--default legend{
+  display: none;
+}
+
+.field.field--name-field-titulo.field--type-string.field--label-visually_hidden,
+.field.field--name-field-titulo-2.field--type-string.field--label-visually_hidden
+{
+  font-size: 32px;
+}
+.field.field--name-field-texto.field--type-string-long.field--label-visually_hidden,
+.field.field--name-field-texto-2.field--type-string-long.field--label-visually_hidden {
+  margin-top: 30px;
+}
+/*.field.field--name-field-imagen.field--type-image.field--label-visually_hidden img,
+.field.field--name-field-imagen-2.field--type-image.field--label-visually_hidden img{
+	border-radius: 30px;
+}*/
+.item_cont_img.js-form-item.form-item.js-form-wrapper.form-wrapper {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
+  overflow: hidden;
+  margin: 0px;
+}
+.item_cont_text.js-form-item.form-item.js-form-wrapper.form-wrapper {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
+  padding: 5px 50px;
+  margin: 0;
+}
+.field.field--name-field-enlace.field--type-link.field--label-visually_hidden,
+.field.field--name-field-enlace-2.field--type-link.field--label-visually_hidden {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.field.field--name-field-enlace.field--type-link.field--label-visually_hidden a,
+.field.field--name-field-enlace-2.field--type-link.field--label-visually_hidden a{
+  padding: 7px 25px;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: navajowhite;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/*Slide mutliple autoplay*/
+.slick-slide img{
+  margin: auto;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#block-plantilla-web-whatsappcontacto {
+	  position: fixed;
+	  top: 40%;
+	  right: 0;
+	  text-align: right;
+	  padding-right: 15px;
+	}
+	.ico_whats {
+	  width: 80px;
+	  height: auto;
+	}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+} 

@@ -1,0 +1,26 @@
+webs_systems:
+  version: 1.x
+  css:
+    theme:
+      css/webs_systems.css: {}
+      css/lib_mod_ws.css: {}
+  js:
+      js/webs-systems.js: {}
+  dependencies: 
+    - core/jquery
+    - core/drupal
+
+ws_carrousel_multi_autoplay:
+  version: 1.x
+  css:
+    theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
+  js:
+    js/slick.js: {}
+    js/carousel_autoplay.js: {}
+  dependencies: 
+    - core/jquery
+    - core/drupal
+    - core/once
+

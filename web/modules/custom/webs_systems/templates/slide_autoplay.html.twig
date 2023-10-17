@@ -1,0 +1,21 @@
+
+{# variables que se pueden utilizar
+	- url_imgs
+	- titulo
+#}
+
+<div class="container">
+	<div class="autoplay">
+	{% for url_img in url_imgs %}
+		{% if url_img %}
+	  		{# Renderizar la imagen utilizando el estilo de imagen "carousel_auto_265_x_370" #}
+	  		<div class="slide slide_car_auto_play">
+		    	<img src="{{url_img|image_style('carousel_auto_265_x_370')}}" alt="Imagen 1">
+		  	</div>
+		{% endif %}
+	{% endfor %}
+	</div>
+</div>
+
+
+
