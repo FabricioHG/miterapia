@@ -36,7 +36,7 @@
         "drupal/views_slideshow": "^5.0",
         "drupal/webform": "^6.2@beta",
         "drupal/webprofiler": "^10.1",
-        "drush/drush": "^11"
+        "drush/drush": "^12.4"
     },
     "conflict": {
         "drupal/drupal": "*"
