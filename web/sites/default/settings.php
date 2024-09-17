@@ -861,9 +861,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'PlantillaWs',
-  'username' => 'PlantillaWs',
-  'password' => 'PlantillaWs',
+  'database' => 'miterapia',
+  'username' => 'miterapia',
+  'password' => 'miterapia',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',

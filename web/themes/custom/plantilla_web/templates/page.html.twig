@@ -69,14 +69,14 @@ set footer_classes = ' ' ~
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+        {# Se movio el div siguiente fuera del anterior para hacer el dieño de Magenta y se le agregaron estilos#}
+        <div class="{{ b5_top_container }} d-flex">
+        <div class="container collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+            {{ page.nav_main }}
+            {{ page.nav_additional }}
+        </div>
+      </div>
     </div>
-    {# Se movio el div siguiente fuer del anterior para hacer el dieño de Magenta y se le agregaron estilos#}
-    <div class="{{ b5_top_container }} d-flex">
-    <div class="container collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
-        {{ page.nav_main }}
-        {{ page.nav_additional }}
-    </div>
-  </div>
   </nav>
   {% endif %}
 

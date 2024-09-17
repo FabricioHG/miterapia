@@ -1,0 +1,25 @@
+uuid: bb718746-acb3-44c9-930f-54a20c2d11ea
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d748bfcf-24bd-45fd-a4de-d4bed9b7ad5d'
+  module:
+    - block_content
+  theme:
+    - plantilla_web
+id: plantilla_web_queesunaterapiacognitivoconductual
+theme: plantilla_web
+region: piso_2
+weight: 0
+provider: null
+plugin: 'block_content:d748bfcf-24bd-45fd-a4de-d4bed9b7ad5d'
+settings:
+  id: 'block_content:d748bfcf-24bd-45fd-a4de-d4bed9b7ad5d'
+  label: '¿Qué es una terapia cognitivo conductual?'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

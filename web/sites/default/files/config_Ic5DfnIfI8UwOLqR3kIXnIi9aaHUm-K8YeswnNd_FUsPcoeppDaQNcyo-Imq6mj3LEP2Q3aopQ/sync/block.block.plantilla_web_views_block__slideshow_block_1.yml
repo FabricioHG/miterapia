@@ -1,6 +1,6 @@
 uuid: 0c426033-0b50-45e4-82db-dcbcd48aa2a7
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.slideshow

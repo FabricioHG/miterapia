@@ -35,7 +35,6 @@
         "drupal/views_bootstrap_multi_item": "^1.0@alpha",
         "drupal/views_slideshow": "^5.0",
         "drupal/webform": "^6.2@beta",
-        "drupal/webprofiler": "^10.1",
         "drush/drush": "^12.4"
     },
     "conflict": {
